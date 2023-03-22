@@ -2,7 +2,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   /* Add page class properties here */
@@ -32,6 +32,7 @@
 
 .nav__links {
   /* Reset default list styles here */
+  margin-bottom: 0;
   list-style: none;
   display: flex;
   column-gap: 20px;
@@ -46,7 +47,7 @@
 .nav__link {
   color: #000000;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .nav__link:hover {
@@ -63,6 +64,8 @@
 }
 
 .header__description {
+  margin-top: 0;
+  margin-bottom: 0;
   max-width: 532px;
   font-size: 20px;
   line-height: 30px;
@@ -252,7 +255,7 @@
 .staff {
   padding-top: 100px;
   padding-bottom: 140px;
-  background-image: url(/images/staff_picks_background.jpg);
+  background-image: url(../images/staff_picks_background.jpg);
 }
 
 .staff__title {
@@ -260,6 +263,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
+  color: #fff;
 }
 
 .staff__subtitle {
@@ -268,13 +272,14 @@
   line-height: 30px;
   font-weight: 400;
   margin: 24px 0 0;
+  color: #fff;
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 
-.staff__card {
+.staff__cards {
   max-width: 760px;
-  margin: 68px auto;
+  margin: 68px auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,16 +346,15 @@
 .membership__steps {
   list-style-type: none;
   padding: 0;
-  margin: 100px auto;
+  margin: 100px auto 0;
   display: flex;
-  flex-basis: auto;
   gap: 40px;
   justify-content: center;
   /* Add styles */
 }
 
 .step {
-  width: 220px;
+  flex-basis: 220px;
   /* Add styles */
 }
 
@@ -406,6 +410,10 @@
   margin-bottom: 32px;
 }
 
+.about__paragraph:last-child {
+  margin-bottom: 0;
+}
+
 .about__circle {
   background-color: #2f80ed;
   width: 495px;
@@ -429,7 +437,7 @@
 .footer__columns {
   display: flex;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 92px;
 }
 
 .footer__column_content_hours {
@@ -455,13 +463,18 @@
   margin: 0;
 }
 
+.footer__list:last-child {
+  margin-bottom: 0;
+}
+
 .footer__list-item {
-  margin-top: 20px;
-  margin-bottom: 16px;
+  margin: 16px auto;
 }
 
 .footer__column-heading {
-  font-weight: lighter;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__column-link {
@@ -485,6 +498,8 @@
 }
 
 .footer__copyright {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-bottom: 60px;
   padding-left: 80px;
 }
